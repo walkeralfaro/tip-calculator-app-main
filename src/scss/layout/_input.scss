@@ -1,0 +1,67 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tip_inputs {
+    width: 42rem;
+    height: 44rem;
+    padding: 4.5rem;
+    padding-right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    #people,
+    #bill {
+        @include m.inputNumber(v.$VeryDarkCyan);
+
+        &::placeholder {
+            color: v.$GrayishCyan;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 1.5rem;
+        color: v.$GrayishCyan
+    }
+
+}
+
+.buttons_container {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    #custom {
+        @include m.inputNumber(v.$VeryDarkCyan);
+        padding: 0rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.people_container {
+
+    .borderZero {
+        outline: 2px solid rgb(233, 111, 12);
+    }
+}
+
+.number_people {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .noZero {
+        display: none;
+    }
+
+    #cantBeZero {
+        color: rgb(233, 111, 12);
+        font-weight: bold;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

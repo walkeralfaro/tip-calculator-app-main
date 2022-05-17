@@ -1,0 +1,30 @@
+{
+  "name": "tip-calculator-app-main",
+  "version": "1.0.0",
+  "description": "Tip calculator challenge",
+  "main": "app.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "Gulp",
+    "Sass",
+    "JS"
+  ],
+  "author": "Walker Alfaro Trelles",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.8",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.13",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "gulp-terser-js": "^5.2.2"
+  }
+}

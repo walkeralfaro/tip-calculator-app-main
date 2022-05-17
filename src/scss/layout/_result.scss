@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tip_results {
+    width: 42rem;
+    height: 44rem;
+    padding: 3rem;
+    padding-left: 2rem;
+
+    
+    .container_tip_results {
+        height: 100%;
+
+        padding: 3rem;
+        border-radius: 1.4rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        background-color: v.$VeryDarkCyan;
+
+    }
+}
+
+.tip_result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+
+    p {
+        font-size: 4.3rem;
+        font-weight: 700;
+        color: v.$StrongCyan;
+    }
+
+
+}
+
+.tip {
+
+    h2 {
+        color: v.$VeryLightGrayishCyan;
+
+    }
+
+    p {
+        color: v.$GrayishCyan;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: .4rem;
+    }
+
+}

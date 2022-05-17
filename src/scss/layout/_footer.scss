@@ -1,0 +1,19 @@
+@use './base/variables' as v;
+
+/* FOOTER */
+footer .attribution {
+    position: absolute;
+    top: 97%;
+
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: v.$VeryDarkCyan;
+
+    a {
+        color: v.$StrongCyan;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}

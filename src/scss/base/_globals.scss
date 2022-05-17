@@ -1,0 +1,56 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 100rem;
+    background-color: v.$LightGrayishCyan;
+    font-family: v.$Font;
+    position: relative;
+}
+
+.flex {
+    height: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    margin: 10rem auto;
+    background-color: v.$White;
+    border-radius: 2.5rem;
+}
+
+

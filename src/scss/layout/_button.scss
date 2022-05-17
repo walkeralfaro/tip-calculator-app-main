@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.buttons_container {
+
+    button {
+        @include m.button(2.4rem, v.$White, v.$VeryDarkCyan);
+
+        &:hover {
+            color: v.$VeryDarkCyan;
+            background-color: v.$LightGrayishCyan;
+        }
+    
+        &:active {
+            color: v.$VeryDarkCyan;
+            background-color: v.$StrongCyan;
+        }
+    }
+
+    .pressed {
+        color: v.$VeryDarkCyan;
+        background-color: v.$StrongCyan;
+
+        &:hover {
+        color: v.$VeryDarkCyan;
+        background-color: v.$StrongCyan;
+        }
+    }
+
+}
+
+.tip_results {
+    button {
+        @include m.button(1.8rem, v.$VeryDarkCyan, v.$StrongCyan);
+
+        &:hover {
+            background-color: v.$LightGrayishCyan;
+        }
+
+        &:disabled {
+            background-color: v.$DarkGrayishCyan;
+            color: v.$VeryDarkCyan;
+            cursor:not-allowed;
+        }
+    }
+
+}
