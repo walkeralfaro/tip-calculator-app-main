@@ -14,10 +14,17 @@
     #people,
     #bill {
         @include m.inputNumber(v.$VeryDarkCyan);
+        background-image: url('/build/images/icon-dollar.svg');
+        background-repeat: no-repeat;
+        background-position: 5% 50%;
 
         &::placeholder {
             color: v.$GrayishCyan;
         }
+    }
+
+    #people {
+        background-image: url('/build/images/icon-person.svg');
     }
 
     .subtitle {
@@ -64,4 +71,17 @@
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+@media (max-width: 900px) {
+    .tip_inputs {
+        width: 37.5rem;
+        height: 44rem;
+        padding: 4rem;
+    }
+
+    .buttons_container {
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
